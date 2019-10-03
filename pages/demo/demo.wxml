@@ -1,0 +1,48 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section-gap">
+        <view class="section-title">switch</view>
+        <switch name="switch"></switch>
+    </view>
+    <view class="section">
+        <view class="section__title">时间选择器</view>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view class="picker">
+                当前选择: {{time}}
+            </view>
+        </picker>
+    </view>
+    <view>
+        <view class="section-title">picker</view>
+        <picker mode="selector" range="[1,2,3]"></picker>
+    </view>
+    <view class="section section-gap">
+        <view class="section-title">input</view>
+        <input name="input" placeholder="please input here"></input>
+    </view>
+    <view class="section section-gap">
+        <view class="section-title">radio</view>
+        <radio-group name="radio-group">
+            <label>
+                <radio value="radio1">radio1</radio>
+            </label>
+            <label>
+                <radio value="radio2">radio2</radio>
+            </label>
+        </radio-group>
+    </view>
+    <view class="section section-gap">
+        <view class="section-title">checkbox</view>
+        <checkbox-group name="checkbox-group">
+            <label>
+                <checkbox value="checkbox1">checkbox1</checkbox>
+            </label>
+            <label>
+                <checkbox value="checkbox2">checkbox2</checkbox>
+            </label>
+        </checkbox-group>
+    </view>
+    <view class="btn-area">
+        <button form-type="submit">Submit</button>
+        <button form-type="reset">Reset</button>
+    </view>
+</form>

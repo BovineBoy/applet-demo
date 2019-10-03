@@ -1,7 +1,8 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/demo/demo"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -9,5 +10,22 @@
         "navigationBarTitleText": "WeChat",
         "navigationBarTextStyle": "black"
     },
-    "sitemapLocation": "sitemap.json"
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "日志"
+            },
+            {
+                "pagePath": "pages/demo/demo",
+                "text": "demo"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "debug": true
 }
